@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OliayaCouture</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playball&family=Splash&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+QLD+Beginner:wght@400..700&family=Playball&family=Shadows+Into+Light&family=Splash&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+QLD+Beginner:wght@400..700&family=Indie+Flower&family=Merienda:wght@300..900&family=Playball&family=Shadows+Into+Light&family=Splash&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Caveat:wght@400..700&family=Dosis:wght@200..800&family=Edu+QLD+Beginner:wght@400..700&family=Indie+Flower&family=Jost:ital,wght@0,100..900;1,100..900&family=Merienda:wght@300..900&family=Playball&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Shadows+Into+Light&family=Signika+Negative:wght@300..700&family=Splash&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+
+    <!--HEADER-->
+    <section class="header">
+        
+        <a href="#" class="logo">OliyayaCouture</a>
+       
+        <nav class="navbar">
+            <div id="close-navbar" class="fas fa-times"></div>
+
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#services">gallery</a>
+            <a href="#contact">contact</a>
+
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+
+
+    <!--HEADER-->
+
+    <!-- HOME -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <span>Welcome</span>
+        <h3>We make <br> exquisite garments <br> to fit your occasion</h3>
+    </div>
+
+</section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+
+    <h1 class="heading">about us</h1>
+
+    <div class="row" >
+
+        <div class="image">
+            <img src="images/about.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3 class="title">OliyayaCouture</h3>
+            <p>OliyayaCouture was started by a black girl whose wildest dream was to become a fashion designer. Her passion for fashion  was discovered by her love for sketching which later on turned into recreating clothing  Her unconventional choice of style and craft has continued to grow vigorously over the years and caught the eyes of many and inspired those around her.</p>        
+            <p>Her boundless and talent-filled craft is inclusive of traditional wear, bridal wear, farewell wear and any other garments of the client’s choice</p>
+
+        
+          
+       
+       
+        </div>
+
+  </section>
+
+  <!-- SERVICES -->
+
+  <section class="services" id="services">
+
+  
+
+    <div class="box-container">
+       
+        <div class="box">
+            <img src="images/services2.jpg" alt="" onclick="FullView(this.src)"/>
+        </div>
+
+        <div class="box">
+            <img src="images/services3.jpg" alt="" onclick="FullView(this.src)"/>>
+        </div>
+
+        <div class="box">
+            <img src="images/services4.jpg" alt="" onclick="FullView(this.src)"/>>   
+        </div>
+
+        <div class="box">
+            <img src="images/services5.jpg" alt="" onclick="FullView(this.src)"/>>
+        </div>
+
+        <div class="box">
+            <img src="images/services6.jpg" alt="" onclick="FullView(this.src)"/>>
+        </div>
+
+        <div class="box">
+            <img src="images/services7.jpg" alt="" onclick="FullView(this.src)"/>>
+        </div>
+
+        <div class="box">
+            <img src="images/services8.jpg" alt="" onclick="FullView(this.src)"/>>   
+        </div>
+
+        <div class="box">
+            <img src="images/services9.jpg" alt="" onclick="FullView(this.src)"/>>
+        </div>
+
+        <div class="box">
+            <img src="images/services10.jpg" alt="" onclick="FullView(this.src)"/>>
+        </div>
+
+        <div class="box">
+            <img src="images/services11.jpg" alt="" onclick="FullView(this.src)"/>>
+        </div>
+
+        <div class="box">
+            <img src="images/services12.jpg" alt="" onclick="FullView(this.src)"/>>   
+        </div>
+
+        <div class="box">
+            <img src="images/services13.jpg" alt="" onclick="FullView(this.src)"/>>
+        </div>
+        
+        <div id="FullImageView">
+            <span id="CloseButton" onclick="CloseFullView()">&times;</span>
+            <img id="FullImage" />
+            
+          </div>
+
+
+    </div>
+   
+
+    <script type="text/javascript">
+        function FullView(ImgLink){
+            document.getElementById("FullImage").src= ImgLink;
+            document.getElementById("FullImageView").style.display="block";
+        }
+        function CloseFullView(){
+            document.getElementById("FullImageView").style.display="none";
+        }
+    </script>
+   
+  </section>
+
+
+ <!--CONTACT-->
+
+   <section class="contact" id="contact">
+
+    <h1 class="heading">Contact</h1>
+
+    <div class="row">
+    
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="65a2ba08-a20d-4ab4-b487-d56fc642f266">
+            <h3>Get in touch with us today</h3>
+            <div class="inputBox">
+                <input type="text" name="name" placeholder="Name" required>
+            </div>
+            <div class="inputBox">
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="inputBox">
+                <input type="text" name="message" placeholder="Message" required>
+            </div>
+
+            <input type="submit" value="Send A Message" class="btn">
+        </form>
+
+        <div class="image">
+            <img src="images/contact.png" alt="">
+        </div>
+        
+    </div>
+
+</section>
+
+<!--FOOTER-->
+
+<section class="footer">
+
+    <div class="box-container">
+ 
+       <div class="box">
+          <h3> Find us here </h3>
+          <div class="share">
+             <a href="https://www.pinterest.com/oliyayacouture" class="fab fa-pinterest"></a>
+             <a href="https://www.tiktok.com/@oliyayacouture/" class="fab fa-tiktok"></a>
+             <a href="https://www.instagram.com/oliyayacouture/" class="fab fa-instagram"></a>
+             
+            
+          </div>
+       </div>
+ 
+       <div class="box">
+          <h3>contact us</h3>
+          <a href="tel:+2778715220" class="link">078 715 2206</a>
+          <a href="mailto:oliyayacouture@gmail.com" class="link">oliyayacouture@gmail.com</a>
+       </div>
+ 
+ 
+    </div>
+ 
+    <div class="credit"> created by <span>Khumo Matsetela</span> | all rights reserved! </div>
+ 
+
+   </section>
+
+    <script src="js/script.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+</body>
+</html>
